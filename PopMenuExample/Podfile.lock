@@ -1,13 +1,24 @@
 PODS:
-  - pop (1.0.7)
+  - pop (1.0.9)
   - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
   - pop
-  - XHRealTimeBlur
+  - XHRealTimeBlur (from `git@github.com:cwx1056/XHRealTimeBlur.git`)
+
+EXTERNAL SOURCES:
+  XHRealTimeBlur:
+    :git: git@github.com:cwx1056/XHRealTimeBlur.git
+
+CHECKOUT OPTIONS:
+  XHRealTimeBlur:
+    :commit: 276996012bb946218f08126d09ab4a81847cb3d3
+    :git: git@github.com:cwx1056/XHRealTimeBlur.git
 
 SPEC CHECKSUMS:
-  pop: 2f14a1ea61339767af9e66741b418c831b3844df
-  XHRealTimeBlur: d814ba7c861d048b330418e23641b190dcd2acf0
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
 
-COCOAPODS: 0.35.0
+PODFILE CHECKSUM: b0a21146387088ad0d0bf97bfdd68bfdc0608507
+
+COCOAPODS: 1.1.0.rc.2
