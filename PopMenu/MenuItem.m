@@ -91,7 +91,7 @@
                     glowColor:(UIColor *)glowColor
                    titleColor:(UIColor *)titleColor
                         index:(NSInteger)index {
-    MenuItem *item = [[self alloc ] initWithTitle:title iconName:iconName glowColor:glowColor index:index];
+    MenuItem *item = [[self alloc ] initWithTitle:title iconName:iconName glowColor:glowColor titleColor:titleColor index:index];
     return item;
 }
 

@@ -37,21 +37,22 @@
     menuItem = [MenuItem itemWithTitle:@"Googleplus" iconName:@"post_type_bubble_googleplus" titleColor:[UIColor colorWithRed:0.840 green:0.264 blue:0.208 alpha:0.800]];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Instagram" iconName:@"post_type_bubble_instagram" titleColor:[UIColor colorWithRed:0.232 green:0.442 blue:0.687 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"Instagram" iconName:@"post_type_bubble_instagram" titleColor:[UIColor purpleColor]];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Twitter" iconName:@"post_type_bubble_twitter" titleColor:[UIColor colorWithRed:0.000 green:0.509 blue:0.687 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"Twitter" iconName:@"post_type_bubble_twitter" titleColor:[UIColor redColor]];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Youtube" iconName:@"post_type_bubble_youtube" titleColor:[UIColor colorWithRed:0.687 green:0.164 blue:0.246 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"Youtube" iconName:@"post_type_bubble_youtube" titleColor:[UIColor greenColor]];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Facebook" iconName:@"post_type_bubble_facebook" titleColor:[UIColor colorWithRed:0.258 green:0.245 blue:0.687 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"Facebook" iconName:@"post_type_bubble_facebook" titleColor:[UIColor blueColor]];
     [items addObject:menuItem];
     
     if (!_popMenu) {
         _popMenu = [[PopMenu alloc] initWithFrame:self.view.bounds items:items];
         _popMenu.menuAnimationType = kPopMenuAnimationTypeNetEase;
+        _popMenu.perRowItemCount = 2;
     }
     if (_popMenu.isShowed) {
         return;
