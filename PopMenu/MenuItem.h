@@ -16,9 +16,14 @@
 @interface MenuItem : NSObject
 
 /**
- *   标题
+ *  标题
  */
 @property (nonatomic, copy) NSString *title;
+
+/**
+ *  标题颜色
+ */
+@property (nonatomic, strong) UIColor *titleColor;
 
 /**
  *  配图
@@ -46,6 +51,10 @@
 
 - (instancetype)initWithTitle:(NSString *)title
                      iconName:(NSString *)iconName
+                    titleColor:(UIColor *)titleColor NS_AVAILABLE_IOS(2_0);
+
+- (instancetype)initWithTitle:(NSString *)title
+                     iconName:(NSString *)iconName
                         index:(NSInteger)index NS_AVAILABLE_IOS(2_0);
 
 - (instancetype)initWithTitle:(NSString *)title
@@ -59,6 +68,10 @@
 + (instancetype)itemWithTitle:(NSString *)title
                      iconName:(NSString *)iconName
                     glowColor:(UIColor *)glowColor NS_AVAILABLE_IOS(2_0);
+
++ (instancetype)itemWithTitle:(NSString *)title
+                     iconName:(NSString *)iconName
+                   titleColor:(UIColor *)titleColor;
 
 + (instancetype)initWithTitle:(NSString *)title
                      iconName:(NSString *)iconName

@@ -40,7 +40,7 @@
         [self addSubview:self.iconImageView];
         
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.iconImageView.frame), CGRectGetWidth(self.bounds), 35)];
-        self.titleLabel.textColor = [UIColor whiteColor];
+        self.titleLabel.textColor = menuItem.titleColor ? [UIColor whiteColor] : menuItem.titleColor;
         self.titleLabel.backgroundColor = [UIColor clearColor];
         self.titleLabel.font = [UIFont systemFontOfSize:14];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
